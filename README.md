@@ -16,10 +16,7 @@ Create `config.txt` configuration file and adapt to your need before running.
 You can copy file from a container:
 
 ```console
-$ docker run -d --name some-xmr-stak-cpu-config minecoins/xmr-stak-cpu
-$ docker cp some-xmr-stak-cpu-config:/usr/local/etc/config.txt .
-$ docker stop some-xmr-stak-cpu-config
-$ docker rm some-xmr-stak-cpu-config
+$ docker run -d --restart=always --name xmr-cpu netroby/docker-xmr-stak-cpu 
 ```
 
 or copy example from [GitHub](https://github.com/fireice-uk/xmr-stak-cpu/blob/v1.1.0-1.1.0/config.txt).
