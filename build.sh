@@ -1,2 +1,3 @@
 #!/bin/sh
-docker build -t netroby/docker-xmr-stak-cpu .
+cd $(pwd)
+docker build --no-cache -t netroby/docker-xmr-stak-cpu -f Dockerfile  .
